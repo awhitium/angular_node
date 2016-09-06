@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Articles list</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="defaultController">
+      <h1>Список заголовков</h1>
+      <ul>
+        <li ng-repeat="title in titles">{{title}}</li>
+      </ul>
+    </div>
+  </body>
+</html>
